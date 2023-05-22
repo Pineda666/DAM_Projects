@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inei_2_"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/text_titulo"
+        android:textColor="#003549"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSubtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/text_subtitulo"
+        android:textColor="#003549"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitulo" />
+
+    <TextView
+        android:id="@+id/textNombresCompletos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_nombres_completos"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textSubtitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textSubtitulo" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textNombresCompletos"
+        app:layout_constraintTop_toBottomOf="@+id/textNombresCompletos" />
+
+    <TextView
+        android:id="@+id/textCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_correo"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textNombresCompletos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="9"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
+
+    <TextView
+        android:id="@+id/textClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_clave"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textCorreo"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberPassword"
+        app:layout_constraintTop_toTopOf="@+id/textCorreo" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:ems="6"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/textTelefono"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_telefono"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/textTelefono" />
+
+    <TextView
+        android:id="@+id/textFechanacimiento"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_fecha_nacimiento"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTelefono"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/textTelefono" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="4"
+        android:inputType="date"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textHoraNacimiento"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_hora_nacimiento"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textFechanacimiento"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime"
+        app:layout_constraintTop_toTopOf="@+id/textFechanacimiento" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="3"
+        android:inputType="time"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textZonaResidencia"
+        app:layout_constraintStart_toEndOf="@+id/textZonaResidencia"
+        app:layout_constraintTop_toTopOf="@+id/textZonaResidencia">
+
+        <RadioButton
+            android:id="@+id/radioButtonUrbano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_Urbano"
+            android:textColor="#003549" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radiobutton_Rural"
+            android:textColor="#003549" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textZonaResidencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_zona_residencia"
+        android:textColor="#D1571B"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textPersonasVivienda"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_personas_vivienda"
+        android:textColor="#003549"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textZonaResidencia"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textIngresoFamilia"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_ingreso_familia"
+        android:textColor="#003549"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textPersonasVivienda"
+        app:layout_constraintStart_toEndOf="@+id/textPersonasVivienda"
+        app:layout_constraintTop_toTopOf="@+id/textPersonasVivienda" />
+
+    <TextView
+        android:id="@+id/textOpinionbonos"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amaranth"
+        android:text="@string/text_opinion_bonos"
+        android:textColor="#003549"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textIngresoFamilia"
+        app:layout_constraintStart_toEndOf="@+id/textIngresoFamilia"
+        app:layout_constraintTop_toTopOf="@+id/textIngresoFamilia" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textPersonasVivienda"
+        app:layout_constraintTop_toBottomOf="@+id/textPersonasVivienda" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textPersonasVivienda"
+        app:layout_constraintTop_toBottomOf="@+id/textIngresoFamilia" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textIngresoFamilia"
+        app:layout_constraintTop_toBottomOf="@+id/textOpinionbonos" />
+
+    <TextView
+        android:id="@+id/textMascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_mascotas"
+        android:textColor="#D1571B"
+        app:layout_constraintStart_toStartOf="@+id/textPersonasVivienda"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <CheckBox
+        android:id="@+id/chackBoxGato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/checkbox_gato"
+        android:textColor="#003549"
+        app:layout_constraintStart_toStartOf="@+id/textMascotas"
+        app:layout_constraintTop_toBottomOf="@+id/textMascotas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPerro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/checkbox_perro"
+        android:textColor="#003549"
+        app:layout_constraintBottom_toBottomOf="@+id/chackBoxGato"
+        app:layout_constraintStart_toEndOf="@+id/chackBoxGato"
+        app:layout_constraintTop_toTopOf="@+id/chackBoxGato" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/checkbox_pollo"
+        android:textColor="#003549"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPerro"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPerro"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPerro" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/checkbox_pato"
+        android:textColor="#003549"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPollo"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPollo"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPollo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxOtro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/checkbox_otro"
+        android:textColor="#003549"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxPato"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxPato"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxPato" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#003549"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/button_enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPollo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

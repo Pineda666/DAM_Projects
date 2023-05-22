@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DAMEP_CarlosAquino</string>
+    <string name="text_titulo">Censo DAM 2023</string>
+    <string name="text_subtitulo">Formulario de Registro</string>
+    <string name="text_nombres_completos">Apellido y Nombre</string>
+    <string name="text_correo">Correo Electrónico</string>
+    <string name="text_clave">Clave :</string>
+    <string name="text_telefono">Telefono de contacto</string>
+    <string name="text_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="text_hora_nacimiento">Hora de Nacimiento</string>
+    <string name="text_zona_residencia">Zona de residencia</string>
+    <string name="text_personas_vivienda">¿Cuántas personas viven en la vivienda?</string>
+    <string name="text_ingreso_familia">Ingreso (Sueldo) Promedio de la Familia</string>
+    <string name="text_opinion_bonos">¿Que opina sobre los bonos otorgados por el gobierno?</string>
+    <string name="text_mascotas">Mascotas que viven en casa</string>
+
+    <string name="radiobutton_Urbano">Urbano</string>
+    <string name="radiobutton_Rural">Rural</string>
+
+    <string name="checkbox_gato">Gato</string>
+    <string name="checkbox_perro">Perro</string>
+    <string name="checkbox_pollo">Pollo</string>
+    <string name="checkbox_pato">Pato</string>
+    <string name="checkbox_otro">Otro</string>
+
+    <string name="button_enviar">Enviar</string>
+
+</resources>
